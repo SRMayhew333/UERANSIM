@@ -35,7 +35,7 @@ static std::unique_ptr<NasSecurityContext> LocallyDeriveNsc()
     auto nsc = std::make_unique<NasSecurityContext>();
     nsc->tsc = nas::ETypeOfSecurityContext::NATIVE_SECURITY_CONTEXT;
     nsc->ngKsi = 0;
-    nsc->downlinkCount = {};
+    nsc->downlinkCount = {257};
     nsc->uplinkCount = {};
     nsc->integrity = nas::ETypeOfIntegrityProtectionAlgorithm::IA0;
     nsc->ciphering = nas::ETypeOfCipheringAlgorithm::EA0;
