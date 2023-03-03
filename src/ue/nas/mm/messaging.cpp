@@ -22,7 +22,7 @@ static bool IsInitialNasMessage(const nas::PlainMmMessage &msg)
     return msgType == nas::EMessageType::REGISTRATION_REQUEST ||
            msgType == nas::EMessageType::DEREGISTRATION_REQUEST_UE_ORIGINATING ||
            msgType == nas::EMessageType::SERVICE_REQUEST ||
-           msgType == nas::EMessageType::REGISTRATION_REQUEST;
+           msgType == nas::EMessageType::DEREGISTRATION_REQUEST_UE_ORIGINATING;
 }
 
 static bool IsAcceptedWithoutIntegrity(const nas::PlainMmMessage &msg)
